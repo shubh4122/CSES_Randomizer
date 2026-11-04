@@ -1,0 +1,20 @@
+export const topics = [
+    'Introductory Problems',
+    'Sorting and Searching',
+    'Dynamic Programming',
+    'Graph Algorithms',
+    'Range Queries',
+    'Tree Algorithms',
+    'Mathematics',
+    'String Algorithms',
+    'Geometry',
+    'Advanced Techniques',
+    'Sliding Window Problems',
+    'Interactive Problems',
+    'Bitwise Operations',
+    'Construction Problems',
+    'Advanced Graph Problems',
+    'Counting Problems',
+    'Additional Problems 1',
+    'Additional Problems 2'
+];
