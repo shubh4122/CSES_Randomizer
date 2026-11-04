@@ -1,5 +1,7 @@
 import React from 'react';
 import Topics from "./Topics.jsx";
+import {topics} from "../data/topics.js";
+import ProblemStatus from "./ProblemStatus.jsx";
 
 function App() {
     return (
@@ -18,24 +20,9 @@ function App() {
                     <Topics/>
                 </div>
 
-                {/*<div className="cr-filter-group">*/}
-                {/*    <label>Difficulty</label>*/}
-                {/*    <select>*/}
-                {/*        <option value="all">All Difficulties</option>*/}
-                {/*        <option value="easy">Easy</option>*/}
-                {/*        <option value="medium">Medium</option>*/}
-                {/*        <option value="hard">Hard</option>*/}
-                {/*    </select>*/}
-                {/*</div>*/}
-
-                {/*<div className="cr-filter-group">*/}
-                {/*    <label>Problem Status</label>*/}
-                {/*    <select>*/}
-                {/*        <option value="unsolved">Unsolved</option>*/}
-                {/*        <option value="attempted">Attempted</option>*/}
-                {/*        <option value="all">All Problems</option>*/}
-                {/*    </select>*/}
-                {/*</div>*/}
+                <div className="cr-filter-group">
+                    <ProblemStatus/>
+                </div>
             </div>
 
             <div className="cr-actions">
@@ -43,9 +30,9 @@ function App() {
                     Get Random Problem
                 </button>
 
-                <button className="cr-dashboard-btn">
-                    Dashboard ↗
-                </button>
+                {/*<button className="cr-dashboard-btn">*/}
+                {/*    Dashboard ↗*/}
+                {/*</button>*/}
             </div>
         </div>
     );

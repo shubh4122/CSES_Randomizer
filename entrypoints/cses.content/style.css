@@ -68,19 +68,9 @@
     color: #475569;
 }
 
-.cr-filter-group select {
-    padding: 10px;
-    border: 1px solid #cbd5e1;
-    border-radius: 7px;
-    background: #ffffff;
-    color: #334155;
-    font-size: 13px;
-    cursor: pointer;
-}
 
-.cr-filter-group select:focus {
-    outline: 2px solid #94a3b8;
-    border-color: transparent;
+.cr-filter-group {
+    margin-bottom: 16px;
 }
 
 .cr-actions {
