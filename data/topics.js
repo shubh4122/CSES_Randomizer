@@ -15,6 +15,6 @@ export const topics = [
     'Construction Problems',
     'Advanced Graph Problems',
     'Counting Problems',
-    'Additional Problems 1',
-    'Additional Problems 2'
+    'Additional Problems I',
+    'Additional Problems II'
 ];

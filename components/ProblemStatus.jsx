@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 
-function Status() {
+function Status({ selectedStatuses, setSelectedStatuses }) {
     const problemStatuses = ['Unsolved', 'Solved'];
-
-    const [selectedStatuses, setSelectedStatuses] = useState([]);
 
     const handleStatusChange = (status) => {
         setSelectedStatuses((prev) =>

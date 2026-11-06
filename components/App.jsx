@@ -2,8 +2,35 @@ import React from 'react';
 import Topics from "./Topics.jsx";
 import {topics} from "../data/topics.js";
 import ProblemStatus from "./ProblemStatus.jsx";
+import {getRandomProblem} from "../services/problemSelector.js";
+import {extractProblems} from "../services/problemExtractor.js";
+
+// import "../entrypoints/style.css";
 
 function App() {
+    const [selectedTopics, setSelectedTopics] = useState([]);
+    const [selectedStatuses, setSelectedStatuses] = useState(['Unsolved', 'Solved']);
+
+    const launchRandomProblem = () => {
+        const problems = extractProblems();
+
+        // console.log('launchRandomProblem called with:', selectedTopics, selectedStatuses);
+
+
+        const problem = getRandomProblem(
+            problems,
+            selectedTopics,
+            selectedStatuses
+        );
+
+        if (!problem) {
+            alert('No problems match your selected filters.');
+            return;
+        }
+
+        window.open(problem.url, '_blank');
+    };
+
     return (
         <div className="cses-randomizer">
             <div className="cr-header">
@@ -17,16 +44,20 @@ function App() {
 
             <div className="cr-filters">
                 <div className="cr-filter-group">
-                    <Topics/>
+                    <Topics
+                        selectedTopics={selectedTopics}
+                        setSelectedTopics={setSelectedTopics}/>
                 </div>
 
                 <div className="cr-filter-group">
-                    <ProblemStatus/>
+                    <ProblemStatus
+                        selectedStatuses={selectedStatuses}
+                        setSelectedStatuses={setSelectedStatuses}/>
                 </div>
             </div>
 
             <div className="cr-actions">
-                <button className="cr-random-btn">
+                <button className="cr-random-btn" onClick={launchRandomProblem}>
                     Get Random Problem
                 </button>
 

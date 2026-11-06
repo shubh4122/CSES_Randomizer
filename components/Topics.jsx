@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {topics} from '../data/topics';
 
-function Topics() {
-    const [selectedTopics, setSelectedTopics] = useState([]);
+function Topics({ selectedTopics, setSelectedTopics }) {
 
     //toggle topics -> from the list.
     const handleTopicChange = (topic) => {

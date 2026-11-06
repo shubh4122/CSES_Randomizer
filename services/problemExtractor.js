@@ -7,7 +7,9 @@ export function extractProblems() {
 
     // Each topic consists of an h2 followed by its task list.
     container.querySelectorAll('h2').forEach((heading) => {
-        const topic = heading.textContent.trim();
+
+        const topic = heading.firstChild.textContent.trim();
+
         const list = heading.nextElementSibling;
 
         if (!list?.matches('ul.task-list')) return;
@@ -30,7 +32,7 @@ export function extractProblems() {
                 name: link.textContent.trim(),
                 topic,
                 url: link.href,
-                status: solved ? 'solved' : 'unsolved'
+                status: solved ? 'Solved' : 'Unsolved'
             });
         });
     });
