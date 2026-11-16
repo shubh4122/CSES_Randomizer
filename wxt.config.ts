@@ -14,7 +14,7 @@ export default defineConfig({
     description: 'Randomized CSES problem practice with topic-blind selection and progress tracking.',
     version: '1.0.0',
 
-    permissions: ['storage']
+    // permissions: ['storage']
   },
 
   webExt: {
