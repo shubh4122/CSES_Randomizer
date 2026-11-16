@@ -101,19 +101,17 @@ Then:
 | React                 | User interface              |
 | WXT                   | Browser extension framework |
 | CSS                   | Styling                     |
-| Chrome Extension APIs | Browser integration         |
+
 
 ---
 
-## 🗺️ Roadmap / TODOs
+## TODOs
 
 - [ ] **Attempted Problems** — Track attempted but unsolved problems.
-- [ ] **Difficulty Filters** — Filter problems by difficulty.
-- [ ] **Topic-Blind Mode** — Hide topic information during randomized practice.
-- [ ] **Favourite Problems** — Bookmark problems for future revision.
+- [ ] **Favourite Problems** — Bookmark/Star problems for future revision.
 - [ ] **Progress Dashboard** — Track solved problems and topic-wise progress.
-- [ ] **Practice Statistics** — Display solving activity and progress over time.
 - [ ] **Persistent Preferences** — Remember selected topics and filters between sessions.
+- [ ] **Dark Mode** — Dark theme for the randomizer component
 
 ---
 
@@ -130,8 +128,3 @@ If you have an idea that could improve the practice experience:
 
 For bugs or feature suggestions, feel free to open an issue.
 
----
-
-## 📄 License
-
-This project is open-source. See the [LICENSE](LICENSE) file for details.
