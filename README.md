@@ -112,6 +112,7 @@ Then:
 - [ ] **Progress Dashboard** — Track solved problems and topic-wise progress.
 - [ ] **Persistent Preferences** — Remember selected topics and filters between sessions.
 - [ ] **Dark Mode** — Dark theme for the randomizer component
+- [ ] **Blacklist** — Blacklist problems/topics to avoid them in future randomizations.
 
 ---
 
