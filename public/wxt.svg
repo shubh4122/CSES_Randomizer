@@ -1,15 +1,58 @@
-<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_305_516)">
-<g clip-path="url(#clip1_305_516)">
-<path d="M49.0229 69.1875C54.1272 69.1875 58.265 65.0497 58.265 59.9454V50.7033H59.9454C65.0497 50.7033 69.1875 46.5655 69.1875 41.4612C69.1875 36.357 65.0497 32.2191 59.9454 32.2191H58.265V22.9771C58.265 17.8728 54.1272 13.735 49.0229 13.735H39.7809V12.0546C39.7809 6.95032 35.643 2.8125 30.5388 2.8125C25.4345 2.8125 21.2967 6.95032 21.2967 12.0546V13.735H12.0546C6.95032 13.735 2.8125 17.8728 2.8125 22.9771V32.2191H4.49288C9.59714 32.2191 13.735 36.357 13.735 41.4612C13.735 46.5655 9.59714 50.7033 4.49288 50.7033H2.8125V69.1875H21.2967V67.5071C21.2967 62.4029 25.4345 58.265 30.5388 58.265C35.643 58.265 39.7809 62.4029 39.7809 67.5071V69.1875H49.0229Z" stroke="#67D55E" stroke-width="5.625"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_305_516">
-<rect width="72" height="72" fill="white"/>
-</clipPath>
-<clipPath id="clip1_305_516">
-<rect width="72" height="72" fill="white"/>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#202b3d"/>
+            <stop offset="100%" stop-color="#0b1220"/>
+        </linearGradient>
+        <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#5eead4"/>
+            <stop offset="100%" stop-color="#22c55e"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+
+    <!-- CSES branding -->
+    <text x="64" y="27"
+          text-anchor="middle"
+          font-family="Arial, sans-serif"
+          font-size="19"
+          font-weight="800"
+          letter-spacing="2"
+          fill="#5eead4">CSES</text>
+
+    <!-- Problem grid -->
+    <g transform="translate(25 39)"
+       fill="none" stroke="#64748b" stroke-width="3">
+        <rect x="0" y="0" width="21" height="21" rx="5"/>
+        <rect x="29" y="0" width="21" height="21" rx="5"/>
+        <rect x="0" y="29" width="21" height="21" rx="5"/>
+    </g>
+
+    <!-- Selected problem -->
+    <rect x="54" y="68" width="21" height="21"
+          rx="5" fill="url(#accent)"/>
+
+    <path d="M60 78 L64 82 L70 74"
+          fill="none" stroke="#0b1220"
+          stroke-width="2.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Randomization arrows -->
+    <g fill="none" stroke="url(#accent)"
+       stroke-width="4" stroke-linecap="round"
+       stroke-linejoin="round">
+        <path d="M55 46 C75 34 95 46 95 62"/>
+        <path d="M86 56 L95 64 L102 54"/>
+
+        <path d="M76 101 C56 113 36 101 36 85"/>
+        <path d="M45 91 L36 83 L29 93"/>
+    </g>
+
+    <!-- Selection sparkle -->
+    <path d="M92 80 L95 88 L103 91 L95 94 L92 102
+           L89 94 L81 91 L89 88 Z"
+          fill="#5eead4"/>
 </svg>
