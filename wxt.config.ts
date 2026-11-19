@@ -12,7 +12,6 @@ export default defineConfig({
   manifest: {
     name: 'CSES Randomizer',
     description: 'Randomized CSES problem practice with topic-blind selection and progress tracking.',
-    version: '1.0.0',
 
     // permissions: ['storage']
   },
