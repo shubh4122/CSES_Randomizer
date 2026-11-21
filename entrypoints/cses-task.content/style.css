@@ -1,0 +1,21 @@
+#cr-topic-toggle > a {
+    text-transform: none;
+    display: block;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    margin: 0 -9.6px;
+}
+
+#cr-topic-toggle > a > .task-score {
+    float: right;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    min-width: 2.5em;
+    margin-left: 0.2em;
+    font-weight: normal;
+    color: #000;
+    border: 1px solid gray;
+}
