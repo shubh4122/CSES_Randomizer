@@ -5,7 +5,11 @@ import App from '../../components/App.jsx';
 
 export default defineContentScript({
     //this content script runs only for below-matched webpages
-    matches: ['https://cses.fi/problemset/list', 'https://cses.fi/problemset/list/'],
+    matches: ['https://cses.fi/problemset/list',
+        'https://cses.fi/problemset/list/',
+        'https://cses.fi/problemset/',
+        'https://cses.fi/problemset'],
+
     // 2. Set cssInjectionMode
     cssInjectionMode: 'ui',
 
